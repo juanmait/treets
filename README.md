@@ -1,11 +1,6 @@
-# NodeJS + Typescript + Prettier + Jest + Vscode
+# Treets
 
-Yet another scaffolding project.
-
-A scaffolding repo to develop NodeJS apps written in typescript with support for
-linting + prettier + jest and great support in vscode. The goal is to have
-typescript all the way down from development to testing with first class support
-in visual studio code.
+Experimentan library to work with very nested objects based in [traverse]
 
 --------------------------------------------------------------------------------
 
@@ -16,7 +11,7 @@ in visual studio code.
 $ yarn install
 ```
 
-start (build + watch):
+start (compile + watch):
 
 ```bash
 $ yarn start
@@ -83,9 +78,9 @@ restrictive if you want. Check `tsconfig.json`.
 
 ```bash
 # transpile all `.ts` files in `./src` folder and place the result in the `./dist` folder
-$ yarn build
+$ yarn compile
 
-# same as `build` but enables a watcher to auto build on file changes
+# same as `compile` but enables a watcher to auto build on file changes
 $ yarn watch
 ```
 
@@ -117,6 +112,7 @@ vscode terminal, you can configure this in `.vscode/settings.json` under
 [lint-staged]:https://www.npmjs.com/package/lint-staged
 [ts-node]:https://github.com/TypeStrong/ts-node
 [jest]:https://jestjs.io/
+[traverse]:https://www.npmjs.com/package/traverse
 
 <!-- vscode extensions -->
 [prettier-vscode]:https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode

@@ -3,8 +3,10 @@
   "description": "A scaffolding repo to develop NodeJS apps written in typescript with support for linting + prettier + jest with great support in vscode.",
   "version": "1.0.0",
   "license": "MIT",
+  "main":"dist/index.js",
   "scripts": {
     "start": "yarn watch",
+    "compile": "rm -rf dist; tsc",
     "build": "tsc",
     "watch": "tsc -w",
     "checkTslint": "tslint-config-prettier-check ./tslint.json",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.21",
+    "@types/traverse": "^0.6.32",
     "husky": "^1.3.1",
     "jest": "^24.0.0",
     "lint-staged": "^8.1.3",
@@ -37,6 +40,7 @@
     "typescript": "^3.3.1"
   },
   "dependencies": {
+    "traverse": "^0.6.6",
     "tslib": "^1.9.3"
   },
   "husky": {
