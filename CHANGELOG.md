@@ -1,5 +1,6 @@
 # 2019-02-03
 
++ add `@types/traverse` as a *prod* dependency
 + add package name to `treets`
 + add `.npmignore`
 + add [traverse] dependency
