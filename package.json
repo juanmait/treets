@@ -1,6 +1,6 @@
 {
-  "name": "node-typescript-prettier-jest-vscode",
-  "description": "A scaffolding repo to develop NodeJS apps written in typescript with support for linting + prettier + jest with great support in vscode.",
+  "name": "treets",
+  "description": "Experimentan library to work with very nested objects based in traverse",
   "version": "1.0.0",
   "license": "MIT",
   "main":"dist/index.js",
@@ -19,12 +19,6 @@
   "author": {
     "name": "Juan M. Cañabate (@juanmait)"
   },
-  "keywords": [
-    "scaffolding",
-    "typescript",
-    "prettier",
-    "jest"
-  ],
   "devDependencies": {
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.21",

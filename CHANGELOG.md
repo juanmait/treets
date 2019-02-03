@@ -1,5 +1,6 @@
 # 2019-02-03
 
++ add package name to `treets`
 + add `.npmignore`
 + add [traverse] dependency
 + add declaration generation (`.d.ts`)
