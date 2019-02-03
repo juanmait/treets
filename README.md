@@ -1,8 +1,19 @@
 # Treets
 
-Experimentan library to work with very nested objects based in [traverse]
+Experimentan library to work with very nested objects. Based in [traverse].
 
+```bash
+yarn add https://github.com/juanmait/treets
+```
+
+## Usage
+
+```ts
+import { traverse } from 'treets'
+```
 --------------------------------------------------------------------------------
+
+# Development
 
 ## TL;DR
 
