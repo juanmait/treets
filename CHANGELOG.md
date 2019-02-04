@@ -1,3 +1,11 @@
+# 2019-02-04
+
++ config babel to add ts support in jest tests
++ expose [traverse] and types from main file
++ remove comments from `tsconfig.json`
++ add `@babel/preset-typescript` and `@babel/preset-env`
++ create a `.babelrc` config file
+
 # 2019-02-03
 
 + add some install and usage info to readme

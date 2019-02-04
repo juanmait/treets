@@ -7,6 +7,6 @@ module.exports = {
     '<rootDir>/build',
     '<rootDir>/.next',
     '<rootDir>/scripts',
-    '<rootDir>/pages'
-  ]
+    '<rootDir>/pages',
+  ],
 }

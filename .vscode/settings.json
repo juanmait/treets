@@ -29,5 +29,8 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
     "dist/**": true
-  }
+  },
+  "cSpell.words": [
+    "Treets"
+  ]
 }
