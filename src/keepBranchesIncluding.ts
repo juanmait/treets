@@ -9,13 +9,17 @@ export const keepBranchesIncluding = (
   obj: GenericObj,
 ): GenericObj | null => {
   const { value } = traverse(obj).reduce(function(acc: Traverse<{}>) {
+    // do not traverse any further if the current node is an array
     if (Array.isArray(this.node)) {
-      this.block()
+      this.block() // ==> skip further traversing of this branch
     }
 
     if (!this.isRoot) {
+      // if the current segment of the current branch (this.key) match
+      // any of the given search words, then include this branch into our
+      // collection but block any further traversing on it
       if (this.key && search.includes(this.key)) {
-        this.block()
+        this.block() // ==> skip further traversing of this branch
         this.path.reduce<string[]>((pathAcc, path, index) => {
           pathAcc.push(path)
           if (!acc.has(pathAcc)) {
