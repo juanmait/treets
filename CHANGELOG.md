@@ -1,5 +1,7 @@
 # 2019-02-04
 
++ add `keepBranchesIncluding` fn
++ remove `.npmignore` (include `files` in package.json)
 + config babel to add ts support in jest tests
 + expose [traverse] and types from main file
 + remove comments from `tsconfig.json`

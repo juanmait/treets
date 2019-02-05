@@ -39,7 +39,7 @@
     // "rootDirs": [],
     // "typeRoots": [],
     // "types": [],
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     // "esModuleInterop": false,
     // "preserveSymlinks": true,
     // "sourceRoot": "",

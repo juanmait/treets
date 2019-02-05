@@ -4,7 +4,7 @@
     "tslint-config-prettier"
   ],
   "linterOptions": {
-    "exclude": [".tmp", "dist", "build", "node_modules", ".vscode"]
+    "exclude": ["dist", "build", "node_modules", ".vscode"]
   },
   "rules": {
     "ordered-imports": false,
