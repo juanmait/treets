@@ -1,5 +1,6 @@
 # 2019-02-04
 
++ import all from `traverse` instead of the `default`
 + add `keepBranchesIncluding` fn
 + remove `.npmignore` (include `files` in package.json)
 + config babel to add ts support in jest tests
