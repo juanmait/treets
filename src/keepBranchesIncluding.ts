@@ -1,4 +1,4 @@
-import { traverse, Traverse } from '.'
+import { traverse, Traverse, TraverseContext } from '.'
 
 interface GenericObj {
   [key: string]: any
@@ -6,9 +6,12 @@ interface GenericObj {
 
 export const keepBranchesIncluding = (
   search: string[],
-  obj: GenericObj,
+  obj: GenericObj
 ): GenericObj | null => {
-  const { value } = traverse(obj).reduce(function(acc: Traverse<{}>) {
+  const { value } = traverse(obj).reduce(function(
+    this: TraverseContext,
+    acc: Traverse<{}>
+  ) {
     // do not traverse any further if the current node is an array
     if (Array.isArray(this.node)) {
       this.block() // ==> skip further traversing of this branch
@@ -35,7 +38,8 @@ export const keepBranchesIncluding = (
     }
 
     return acc
-  }, traverse({}))
+  },
+  traverse({}))
 
   if (Object.keys(value).length) {
     return value

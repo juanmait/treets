@@ -2,15 +2,9 @@
   "code-runner.runInTerminal": true,
   "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "typescript": "node_modules/.bin/\"$(node ./scripts/custom-code-runner.js $fileName)\" $fullFileName"
-  },
-  "code-runner.executorMapByFileExtension":{
-    ".test.ts": "jest",
-  },
-  "code-runner.languageIdToFileExtensionMap": {
-    "typescript": ".ts",
+  "code-runner.executorMapByGlob": {
+    "*.test.(j|t)s": "yarn jest",
+    "*.(j|t)s": "NODE_ENV=development BABEL_ENV=development node_modules/.bin/babel-node --extensions '.ts,.js'"
   },
   "code-runner.ignoreSelection": true,
   "code-runner.preserveFocus": true,
@@ -22,15 +16,16 @@
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
-    "dist": true
+    "dist": true,
+    "build": true
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
-    "dist/**": true
+    "dist/**": true,
+    "build/**": true
   },
-  "cSpell.words": [
-    "Treets"
-  ]
+  "json.format.enable": true,
+  "prettier.eslintIntegration": true
 }
