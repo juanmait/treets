@@ -80,6 +80,8 @@
   },
   "files": [
     "build",
+    "package.json",
+    "yarn.lock",
     "README.md",
     "CHANGELOG.md"
   ]

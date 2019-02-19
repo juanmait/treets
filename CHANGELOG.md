@@ -1,5 +1,6 @@
 # 2019-02-19
 
+- export missing utils from lib folder
 - add `main` key to package.json
 - add new utils `branches`, `leaves`, `toHash`
 - upgrade code-runner glob patters in .vscode/settings.json
