@@ -22,9 +22,9 @@ Object.defineProperty(exports, "Traverse", {
 });
 exports.traverse = void 0;
 
-var _traverse2 = require("traverse");
+var _traverse2 = _interopRequireWildcard(require("traverse"));
 
-var _keepBranchesIncluding = require("./keepBranchesIncluding");
+var _keepBranchesIncluding = require("./lib/keepBranchesIncluding");
 
 Object.keys(_keepBranchesIncluding).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -37,9 +37,8 @@ Object.keys(_keepBranchesIncluding).forEach(function (key) {
   });
 });
 
-const _traverse = require('traverse'); //tslint:disable-line
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-
-const traverse = _traverse;
+const traverse = _traverse2.default;
 exports.traverse = traverse;
 //# sourceMappingURL=index.js.map

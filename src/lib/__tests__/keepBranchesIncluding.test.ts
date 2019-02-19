@@ -1,6 +1,6 @@
-import { keepBranchesIncluding } from '.'
+import { keepBranchesIncluding } from '..'
 
-test('it works', () => {
+test('"keepBranchesIncluding" works okay', () => {
   const final = keepBranchesIncluding(['mundo', 'tan'], {
     hola: {
       hermoso: {

@@ -1,5 +1,6 @@
 # 2019-02-19
 
+- add new utils `branches`, `leaves`, `toHash`
 - upgrade code-runner glob patters in .vscode/settings.json
 - rebuild yarn.lock and regenerate dependency tree
 - sync environment with latest features in [lib-node]
