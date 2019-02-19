@@ -3,6 +3,7 @@
   "description": "Experimentan library to work with very nested objects based in traverse",
   "version": "1.0.0",
   "license": "MIT",
+  "main": "build/index.js",
   "scripts": {
     "start": "concurrently \"yarn build:dev --watch\" \"yarn build:types --watch\"",
     "test": "jest",
