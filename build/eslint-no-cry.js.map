@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/eslint-no-cry.js"],"names":[],"mappings":";;;;;;AAAA;AACA;eACe,E","sourcesContent":["// REMOVE THIS FILE AFTER ADDING SOME JS\n// see: https://github.com/eslint/eslint/issues/10587\nexport default {}\n"],"file":"eslint-no-cry.js"}
